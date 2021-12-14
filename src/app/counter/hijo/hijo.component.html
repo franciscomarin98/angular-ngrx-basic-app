@@ -1,0 +1,17 @@
+<h3>Contador hijo</h3>
+<h4>{{contador}}</h4>
+
+<div class="container row">
+  <div class="col">
+    <button class="btn btn-primary mx-1" (click)="multiplicarContador()">Multiplicar</button>
+    <button class="btn btn-secondary mx-1" (click)="dividirContador()">Dividir</button>
+  </div>
+</div>
+
+<hr>
+
+<div class="container row">
+  <div class="col">
+    <app-nieto [contador]="contador" (resetContador)="resetNieto($event)"></app-nieto>
+  </div>
+</div>
